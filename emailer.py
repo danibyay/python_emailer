@@ -2,6 +2,7 @@
 #This is an emailer app, to send emails to the spam van customers in
 #automated way
 import weather
+import smtp
 
 def get_emails():
     #create a new dictionary for the emails
@@ -32,10 +33,9 @@ def get_schedule():
 
 def main():
     emails = get_emails()
-    print(emails)
     schedule = get_schedule()
-    print(schedule)
     forecast = weather.get_weather_forecast()
-    print(forecast)
+    smtp.send_emails(emails,schedule,forecast)
+
 
 main()
