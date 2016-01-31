@@ -23,3 +23,8 @@ def send_emails(emails, schedule, forecast):
 
     #disconnect
     server.quit()
+
+
+#instead of sending the emails, I print it to the console
+#because due to security, gmail won't let me actually login
+#via the terminal

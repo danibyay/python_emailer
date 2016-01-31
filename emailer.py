@@ -39,3 +39,5 @@ def main():
 
 
 main()
+#idea: instead of printing, practice writing the emails
+#content to a txt file. For later..
